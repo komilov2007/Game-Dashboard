@@ -1,0 +1,485 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white-color:#ffffff;
+  --black-color:#050729;
+  --blue-color:#5E8DEA;
+  --gradient-color:#283C64;
+  --orange-color:#FEB10C;
+  --backround-color:#ECEFF5;
+  --sariq-color:#FBE9CC;
+  --orange-color:#FDBF0F;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--backround-color);
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  gap: 10px;
+
+  grid-template-areas: 
+  'a h h h h h h h h'
+  'a s1 s1 s1 s1 s1 s1 ac ac'
+  'a s1 s1 s1 s1 s1 s1 ac ac'
+  'a s1 s1 s1 s1 s1 s1 ac ac'
+  'a s1 s1 s1 s1 s1 s1 ac ac'
+  'a b1 b1 b2 b2 b3 b3 b4 b4' 
+  'a b1 b1 b2 b2 b3 b3 b4 b4' 
+  'a b1 b1 b2 b2 b3 b3 b4 b4' 
+  'a b1 b1 b2 b2 b3 b3 b4 b4' 
+  'a f f f f f f f f'
+  'a f f f f f f f f';
+  
+
+}
+header {
+  grid-area: h;
+  background-color:transparent;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header input {
+  width: 742px;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: none;
+}
+.xabar {
+  background-color: var(--white-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.settings {
+  background-color: var(--white-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.head-text {
+  font-size: 23px;
+  font-family: 'Linux';
+}
+aside {
+  grid-area: a;
+  background-color: var(--white-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-right: 20px;
+}
+aside a:first-child {
+  align-self: center;
+  width: 71px;
+  height: 71px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+aside .asid1:nth-child(2) {
+    opacity: 40%;
+}
+aside div, a {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  font-family: 'Linux';
+}
+.asid1:hover {
+  background-color: var(--sariq-color);
+  border-radius: 10px;
+}
+section {
+  grid-area: s1;
+  background-color: yellow;
+}
+.section-1 {
+  background-image: linear-gradient(to right, var(--gradient-color),var(--blue-color));
+  border-radius: 10px;
+  position: relative;
+}
+.section-1 img {
+  position: absolute;
+  left: 300px;
+}
+.section-1 img:last-child {
+  width: 430px;
+  position: absolute;
+  left: 62%;
+  bottom: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--white-color);
+  font-family: 'Linux';
+}
+h2 {
+  font-size: 15px;
+  color: #F4F5FA;
+  font-family: 'Linux';
+}
+.section-1 button {
+  width: 146px;
+  height: 44px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-size: 19px;
+   transition: 0.3s
+}
+.section-1 button:hover {
+  background-color: var(--backround-color);
+  color: var(--gradient-color);
+
+}
+.sect-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  font-family: 'Linux';
+}
+article {
+  grid-area: ac;
+  background-color:var(--white-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 10px;
+}
+article img {
+  width: 45px;
+  height: 40px;
+  margin-left: 4%;
+  border-radius: 10px;
+}
+article p:first-child {
+  font-size: 23px;
+  font-family: 'Linux';
+  margin-left: 4%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+article p {
+  font-family: 'Linux';
+}
+.box1 {
+  display: flex;
+  gap: 17px;
+}
+.box2 {
+   display: flex;
+  gap: 17px;
+}
+.box3 {
+   display: flex;
+  gap: 17px;
+}
+.box4 {
+   display: flex;
+  gap: 17px;
+}
+.art-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.art-btn:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  
+}
+.box-1 {
+  grid-area: b1;
+  background-color:transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+.caterog {
+  font-size: 23px;
+  font-family: 'Linux';
+}
+.puzle {
+  background-color: var(--white-color);
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 12px;
+  opacity:50%;
+}
+.puzle:hover {
+  opacity: 100%;
+  transition: 0.3s;
+}
+.box1 button {
+  margin-left: 30%;
+  width: 67px;
+  height: 27px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--blue-color);
+}
+.box-2 {
+  grid-area: b2;
+  background-color:var(--white-color);
+  border-radius: 10px;
+}
+.box-2 img {
+  width: 333px;
+  height: 166px;
+}
+.subwayy {
+  font-size:    15px;
+  font-family: 'Linux';
+  margin: 5px 0 5px 15px ;
+}
+.box-2 .daraja {
+  font-size: 12px;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.box-2 img:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.box-2 .down {
+  margin-left: 35px;
+  margin-top: 8px;
+  background-color: #5E8DEA;
+  width: 263px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: var(--white-color);
+  font-family: 'Linux';
+}
+.box-2 .ming {
+  font-size: 12px;
+  font-family: 'Linux';
+  margin: 0;
+}
+.star img:first-child {
+  margin-left: 15px;
+}
+.star {
+  display: flex;
+  gap: 5px  ;
+}
+.box-2 .star img {
+  width: 12px;
+  height: 12px;
+}
+.box2 button {
+  margin-left: 91px;
+  width: 67px;
+  height: 27px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--blue-color);
+}
+.box-3 {
+  grid-area: b3;
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+.box-3 img:first-child {
+  width: 333px;
+  height: 166px;
+  border-radius: 10px 10px 0 0 ;
+}
+.down:hover {
+  background-color: var(--white-color);
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+}
+.box-3 .start img{
+width: 12px;
+height: 12px;  
+}
+.box-3 .subwayy {
+  margin-left: 15px;
+  font-size:    15px;
+  font-family: 'Linux';
+  margin: 5px 0 5px 15px ;
+}
+.box-3 .start img:first-child {
+  margin-left: 15px;
+}
+.box-3 .start {
+  display: flex;
+  gap: 5px;
+}
+.box3 button {
+  margin-left: 36%;
+  width: 67px;
+  height: 27px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--blue-color);
+}
+.daraja {
+  margin-left: 5px;
+  font-size: 12px;
+  font-family: 'Linux';
+  margin-right: 10px;
+}
+.ming {
+  font-size: 12px;
+  font-family: 'Linux';
+}
+.down {
+  margin-left: 35px;
+  margin-top: 8px;
+  background-color: var(--blue-color);
+  width: 263px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: var(--white-color);
+  font-family: 'Linux';
+  transition: 0.3s;
+} 
+.box-4 {
+  grid-area: b4;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.box-4 img:first-child {
+  width: 324px;
+  height: 166px;
+  border-radius: 10px 10px 0 0 ;
+}
+.star img:first-child {
+  width:12px;
+  height: 12px;
+}
+.box4 button {
+  margin-left: 31%;
+  width: 67px;
+  height: 27px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--blue-color);
+}
+footer {
+  grid-area: f;
+}
+
+.foot-color {
+  background-color: var(--white-color);
+  width: 98%;
+  height: 73px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.foot-color img {
+  width: 45px;
+  height: 45px;
+  margin-left: 1%;
+  border-radius: 10px;
+} 
+.foot-yellow {
+  background-color:var(--sariq-color);
+  width: 70%;
+  height: 10px;
+  margin-left: 2%;
+  border-radius: 10px;
+}
+.yellow {
+  background-color: var(--orange-color);
+  width: 555px;
+  height: 10px;
+  border-radius: 10px;
+
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes lading {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(68%);
+  background-color: var(--blue-color);
+  }
+}
+.foot-color button {
+  background-color: transparent;
+  border: 1px solid var(--blue-color);
+  font-size: 12px;
+  width: 5%;
+  height: 34px;
+  border-radius: 10px;
+}
+.foot-color button:hover {
+  background-color: var(--gradient-color);
+  color: var(--backround-color);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'Linux';
+  src: url(./fonts/LinLibertine_RZ.ttf);
+  font-weight: 600;
+}
